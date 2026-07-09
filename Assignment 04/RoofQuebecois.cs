@@ -6,6 +6,7 @@ namespace Assignment_04
 {
     internal class RoofQuebecois:IRoof
     {
+        // Method to display the roof of the Quebecois house using the IRoof interface
         public void Display()
         {
             Console.WriteLine("Roof - Quebecois");

@@ -6,6 +6,7 @@ namespace Assignment_04
 {
     internal class FactoryInterior
     {
+        // Factory method to create an instance of the appropriate interior class based on the product type
         internal static IInterior Factory(ProductType type)
         {
             IInterior IInterior = null;

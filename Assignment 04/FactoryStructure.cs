@@ -6,6 +6,7 @@ namespace Assignment_04
 {
     internal class FactoryStructure
     {
+        // Factory method to create an instance of IStructure based on the provided ProductType
         internal static IStructure Factory(ProductType type)
         {
             IStructure IStructure = null;

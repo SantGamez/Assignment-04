@@ -7,6 +7,7 @@ namespace Assignment_04
 {
     internal class FactoryBasement
     {
+        // Method to create a basement based on the product type
         internal static IBasement Factory(ProductType type)
         {
             IBasement IBasement = null;

@@ -6,24 +6,15 @@ namespace Assignment_04
 {
     internal class QuebecoisFactory : AbstractFactory
     {
+        // This is a concrete factory that implements the abstract factory methods to create Quebecois-style houses and duplexes.
         internal override House makeHouse()
         {
-            var house = new House();
-            house.setBasement(ProductType.QUEBECOIS);
-            house.setStructure(ProductType.QUEBECOIS);
-            house.setInterior(ProductType.QUEBECOIS);
-            house.setRoof(ProductType.QUEBECOIS);
-            return house;
+            return new House();
         }
 
         internal override Duplex makeDuplex()
         {
-            var duplex = new Duplex();
-            duplex.setBasement(ProductType.QUEBECOIS);
-            duplex.setStructure(ProductType.QUEBECOIS);
-            duplex.setInterior(ProductType.QUEBECOIS);
-            duplex.setRoof(ProductType.QUEBECOIS);
-            return duplex;
+            return new Duplex();
         }
     }
 }

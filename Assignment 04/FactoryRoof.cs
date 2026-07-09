@@ -6,6 +6,7 @@ namespace Assignment_04
 {
     internal class FactoryRoof
     {
+        // Factory method to create different types of roofs based on the ProductType enum
         internal static IRoof Factory(ProductType type)
         {
             IRoof IRoof = null;

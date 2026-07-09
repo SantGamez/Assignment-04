@@ -6,7 +6,8 @@ namespace Assignment_04
 {
     internal class House
     {
-        private IBasement? basement; // used ? because the basement can be null if not set
+        // The House class represents a house with its components: basement, structure, interior, and roof.
+        private IBasement? basement;
         private IStructure? structure;
         private IInterior? interior;
         private IRoof? roof;
@@ -31,8 +32,10 @@ namespace Assignment_04
             this.roof = FactoryRoof.Factory(type);
         }
 
+        // The displayHouse method displays the details of the house by calling the Display method of each component.
         internal void displayHouse()
         {
+            Console.WriteLine($"House is ready:");
             basement?.Display();
             structure?.Display();
             interior?.Display();

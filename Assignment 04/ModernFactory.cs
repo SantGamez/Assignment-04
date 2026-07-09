@@ -6,24 +6,15 @@ namespace Assignment_04
 {
     internal class ModernFactory : AbstractFactory
     {
+        // This is a concrete factory class that implements the abstract factory methods to create Modern-style houses and duplexes.
         internal override House makeHouse()
         {
-            var house = new House();
-            house.setBasement(ProductType.MODERN);
-            house.setStructure(ProductType.MODERN);
-            house.setInterior(ProductType.MODERN);
-            house.setRoof(ProductType.MODERN);
-            return house;
+            return new House();
         }
 
         internal override Duplex makeDuplex()
         {
-            var duplex = new Duplex();
-            duplex.setBasement(ProductType.MODERN);
-            duplex.setStructure(ProductType.MODERN);
-            duplex.setInterior(ProductType.MODERN);
-            duplex.setRoof(ProductType.MODERN);
-            return duplex;
+            return new Duplex();
         }
     }
 }

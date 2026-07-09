@@ -6,6 +6,7 @@ namespace Assignment_04
 {
     internal class InteriorPersian:IInterior
     {
+        // Method to display the interior of the Persian house using the IInterior interface
         public void Display()
         {
             Console.WriteLine("Interior - Persian");
